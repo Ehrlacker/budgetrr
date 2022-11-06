@@ -9,11 +9,17 @@
 </head>
 <body>
     <main class="budget-container">
-        <div class="app-title">
-            <a href="">Budgetrr</a>
-        </div>
-        <h1 class="month">October</h1>
+
+        <section class="balance-container">
+
+
         
+        <div class="app-title">
+            <p>Budgetrr</p>
+        </div>
+
+        <h1 class="month">OCTOBER</h1>
+
         <section class="budget-header">
             <div class="balance">
                 <div class="title">
@@ -23,8 +29,10 @@
                     <small>$</small>0
                 </div>
             </div>
+
+
             <div class="account">
-                <div class="income">
+                <div class="budget-income">
                     <div class="title">
                         Income
                     </div>
@@ -33,48 +41,68 @@
                     </div>
                 </div>
                 <div class="chart"></div>
-                <div class="outcome">
+                <div class="budgetoutcome">
                     <div class="title">
-                        Income
+                        Expenses
                     </div>
                     <div class="outcome-total">
                         <small>$</small>0
                     </div>
                 </div>
             </div>
+
         </section>
+    </section>
 
 
         <section class="budget-dashboard">
             <div class="dash-title">Dashboard</div>
             <div class="toggle">
-                <div class="tab1">Expenses</div>
+                <div class="tab1 clicked">Expenses</div>
                 <div class="tab2">Income</div>
-                <div class="tab3 active">All</div>
+                <!-- <div class="tab3  clicked">All</div> -->
             </div>
-            <div class="hide" id="income">
+
+
+
+
+            <div class="income-tab hidden">
                 <ul class="list"></ul>
+
+                <div class="income-input-container">
+                <form class="input">
+                    <input type="text" class="income-title-input" name="title" placeholder="Title">
+
+                    <input type="number" class="income-amount-input" name="amount" placeholder="$0">
+
+                    <button type = "button" class="add-income"><img class= "plus-img"src="media/Icons/icons8-add-new-48.png" alt=""></button>
+                </form>
+            </div>
+            </div>
+
+
+
+             <div class = "expense-tab">
+                <ul class="list"></ul>
+
+                <div class="expense-input-container">
+
                 <div class="input">
-                    <input type="text" id="income-title-input" name="title" placeholder="Title">
-                    <input type="number" id="income-amount-input" name="amount" placeholder="$0">
-                    <div class="add-income"><img src="icon/plus.png" alt=""></div>
+                    <input type="text" class="expense-title-input" name="title" placeholder="Title">
+
+                    <input type="number" class="expense-amount-input" name="amount" placeholder="$0">
+                    <button type="button" class="add-expense"><img class= "plus-img" src="media/Icons/icons8-add-new-48.png" alt=""></button>
+                    
                 </div>
+                </div> 
             </div>
-            <div class="hide" id="expense">
-                <ul class="list"></ul>
-                <div class="input">
-                    <input type="text" id="expense-title-input" name="title" placeholder="Title">
-                    <input type="number" id="expense-amount-input" name="amount" placeholder="$0">
-                    <div class="add-expense"><img src="icon/plus.png" alt=""></div>
-                </div>
-            </div>
-            <div id="all">
-                <ul class="list"></ul>
-            </div>
+
+
+
+
+           
         </section>
     </main>
-
-    <script src="chart.js"></script>
-    <script src="budget.js"></script>
+    <script src="JavaScript/budget.js"></script>
 </body>
 </html>
