@@ -45,14 +45,26 @@ input::-webkit-inner-spin-button {
     color: white;
     margin-top: 1rem;
     margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between
     
 }
 
 .month{
+    /* color: white; */
+    /* margin: 2.5rem 0 1.5rem 0 ;
+    text-align: center; */
+    border: none;
+    background-color: none;
+    outline: none;
+    all: unset;
+    width: 100px;
+    text-align: right;
+}
+
+.month::placeholder{
     color: white;
-    margin-top: 1rem;
-    text-align: center;
-    
 }
 
 
@@ -65,8 +77,9 @@ input::-webkit-inner-spin-button {
 
 
 .balance{
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin-top: 3rem;
+    /* margin-left: 1rem; */
+    text-align: center;
    
 }
 
@@ -82,13 +95,14 @@ input::-webkit-inner-spin-button {
     font-size: 1.75rem;
     color: white;
     font-weight: bold;
-    margin-left: 1rem;
+    
+    text-align: center;
     
 }
 
 .account{
-    margin-top: 2.5rem;
-    margin: 2.5rem 1.5rem 2.5rem 1.5rem;
+    /* margin-top: 1rem; */
+    margin: 1.5rem 1.5rem 2.5rem 1.5rem;
     display: flex;
     justify-content: space-between
 
@@ -98,12 +112,14 @@ input::-webkit-inner-spin-button {
     color: white;
     text-align: center;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .outcome-total{
     color: #4F98CA;
     text-align: center;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 
@@ -177,11 +193,9 @@ input::-webkit-inner-spin-button {
 }
 
 .add-expense{
-    color: none;
-    background-color: none;
-    border: none;
-    outline: none;  
-    color: inherit;
+   
+    all: unset;
+    
 }
 
 /* INCOME TAB */
@@ -222,14 +236,13 @@ input::-webkit-inner-spin-button {
 
 
 .add-income{
-    color: none;
-    background-color: none;
-    border: none;
-    outline: none;
+    
+    all: unset;
 }
 
 .plus-img{
     width: 40px;
+    
 }
 
 
@@ -242,6 +255,12 @@ ul{
     margin-top:20px;
     overflow-x: auto;
     
+}
+
+
+
+li{
+    font-size: 1.25rem;
 }
 
 
@@ -332,7 +351,8 @@ li{
 
     .balance-container{
     position: absolute;
-    top: 10%;
+    /* top: 10%; */
+    top: 65px;
     left: 25%;
 
     }
@@ -340,6 +360,7 @@ li{
     .budget-dashboard{
     position: absolute;
     left: 25%;
-    top: 40%;
+    /* top: 55%; */
+    top: 350px;
     }
 }
